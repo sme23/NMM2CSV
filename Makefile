@@ -10,7 +10,8 @@ dist: c2ea.py n2c.py icon.ico
 	pyinstaller -F --distpath "$(DIST_DIR)" --icon=icon.ico c2ea.py
 	pyinstaller -F --distpath "$(DIST_DIR)" --icon=icon.ico n2c.py
 	cp -f "Readme.md" "$(DIST_DIR)/Readme.md"
-	cp -f "Table Definitions.txt" "$(DIST_DIR)/Table Definitions.txt"
+	cp -f "Table Definitions.event" "$(DIST_DIR)/Table Definitions.event"
 
 clean:
 	rm -rf $(DIST_DIR)
+
